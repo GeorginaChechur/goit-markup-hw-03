@@ -17,8 +17,39 @@ body {
     color: var(--main-txt-cl);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
 li {
     list-style: none;
+}
+
+.header {
+ border-bottom: 1px solid #ECECEC; 
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .link,
@@ -27,6 +58,7 @@ li {
 }
 
 .logo {
+    margin-right: 93px;
     color: var(--accent-cl);
     font-family: var(--secondary-font);
     font-size: 26px;
@@ -41,6 +73,43 @@ li {
 
 .logo-white {
     color: var(--white-color);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-list{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-item {
+    margin-right: 50px;
+}
+
+.navigation-item:last-child{
+    margin-right: 0;
+}
+
+.contacts-item {
+    margin-right: 40px;
+}
+
+.contacts-item:last-child {
+    margin-right: 0;
 }
 
 .header-menu {
@@ -85,7 +154,19 @@ letter-spacing: 0.28px;
     background-color: var(--main-bg-cl);
 }
 
+.hero-group {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .hero-title {
+    margin-bottom: 30px;
     color: var(--white-color);
     text-align: center;
     font-family: var(--main-font);
@@ -98,6 +179,7 @@ letter-spacing: 0.28px;
 }
 
 .hero-btn {
+    padding: 10px 24px;
     border-radius: 4px;
     background: var(--accent-cl);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -116,6 +198,25 @@ letter-spacing: 0.28px;
 /* --------------------
        FEATURE
 -------------------- */
+
+.feature{
+padding-top: 94px;
+padding-bottom: 118px;
+}
+
+.feature-list{
+display: flex;
+align-items: start;
+justify-content: space-between;
+}
+
+.feature-item {
+    margin-right: 30px;
+}
+
+.feature-item:last-child {
+    margin-right: 0;
+}
 
 .item-title {
 color: var(--dark-color);
@@ -140,6 +241,29 @@ text-transform: uppercase;
        ABOUT
 -------------------- */
 
+.about {
+    padding-bottom: 94px;
+}
+
+.about-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-title {
+    margin-bottom: 50px;
+}
+
+.about-item {
+    margin-right: 30px;
+}
+
+.about-img:last-child {
+    margin-right: 0;
+}
+
 .about-title,
 .team-title {
 color: var(--dark-color);
@@ -156,10 +280,35 @@ letter-spacing: 1.08px;
 -------------------- */
 
 .team {
+    padding-bottom: 94px;
+}
+
+.team-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.member-list {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.member-item{
+    margin-right: 30px;
+}
+
+.member-item:last-child {
+    margin-right: 0;
+}
+
+.team {
     background-color: var(--secondary-bg-cl);
 }
 
 .member-group {
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white-color);
     text-align: center;
@@ -171,6 +320,7 @@ letter-spacing: 1.08px;
 }
 
 .member-title {
+    margin-bottom: 10px;
     color: var(--dark-color);
     font-weight: 500;
     font-size: 16px;
@@ -186,7 +336,29 @@ letter-spacing: 1.08px;
        FILTER
 -------------------- */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filter-list {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-item {
+    margin-right: 8px;
+}
+
+.filter-item:last-child {
+    margin-right: 0;
+}
+
 .filter-btn {
+padding: 6px 22px;
+border: none;
 border-radius: 4px;
 background: var(--secondary-bg-cl);
 cursor: pointer;
@@ -208,7 +380,15 @@ letter-spacing: 0.48px;
        CONTENT
 -------------------- */
 
+.content-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .description {
+    padding: 20px 24px;
     border: 1px solid #EEE;
     background: var(--white-color);
 }
@@ -233,15 +413,23 @@ letter-spacing: 0.48px;
 -------------------- */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--main-bg-cl);
 }
 
 .adr {
+    margin-top: 28px;
     color: var(--white-color);
     font-style: normal;
     font-size: 14px; 
     line-height: 1.71em;
     letter-spacing: 0.42px;
+}
+
+.address-item {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .address-link {
