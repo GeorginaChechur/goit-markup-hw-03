@@ -40,6 +40,10 @@ li {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 .header {
  border-bottom: 1px solid #ECECEC; 
 }
@@ -82,10 +86,10 @@ li {
 }
 
 .navigation {
-    width: 100%;
+   
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  
 }
 
 .navigation-list{
@@ -104,10 +108,10 @@ li {
 }
 
 .contacts-list {
-    width: 100%;
+    margin-left: auto;
     display: flex;
     align-items: center;
-    justify-content: end;
+    
 }
 
 
@@ -168,22 +172,14 @@ letter-spacing: 0.28px;
     background-color: var(--main-bg-cl);
     padding-top: 200px;
     padding-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   
 }
 
-.hero-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
 .hero-title {
+    margin: auto;
     margin-bottom: 30px;
     color: var(--white-color);
     text-align: center;
@@ -197,6 +193,8 @@ letter-spacing: 0.28px;
 }
 
 .hero-btn {
+    display: block;
+    margin: auto;
     padding: 10px 24px;
     border-radius: 4px;
     background: var(--accent-cl);
@@ -224,8 +222,8 @@ padding-bottom: 94px;
 
 .feature-list{
 display: flex;
-align-items: start;
-justify-content: space-between;
+/* align-items: start;
+justify-content: space-between; */
 }
 
 .feature-item {
@@ -315,7 +313,7 @@ letter-spacing: 1.08px;
 .member-list {
 display: flex;
 align-items: center;
-justify-content: space-between;
+/* justify-content: space-between; */
 }
 
 .member-item{
@@ -356,9 +354,6 @@ justify-content: space-between;
        
 }
 
-.member-img {
-    display: block;
-}
 
 /* --------------------
        FILTER
@@ -413,8 +408,10 @@ letter-spacing: 0.48px;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+
 }
 
+ 
 .content-img {
     display: block;
 }
@@ -463,8 +460,12 @@ letter-spacing: 0.48px;
     letter-spacing: 0.42px;
 }
 
-.address-item {
+.address-list {
     margin-top: 12px;
+}
+
+.address-item:first-child {
+    margin-bottom: 12px;
 }
 
 .address-link {
